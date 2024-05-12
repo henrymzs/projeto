@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plano</title>
+  <link rel="stylesheet" href="../static/global.css">
+  <link rel="stylesheet" href="../static/styles.css">
+</head>
+ 
+<body>
+  <!-- Inicio do cabeçalho do site -->
+  <header>
+    <div class="navbar">
+      <div class="header-inner-content">
+        <a href="index.html" class="logo">
+          <img src="../image/X.png" alt="logo">
+          <h2>Plano</h2>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./help.html">Precisa de Ajuda?</a></li>
+            <li><a href="./bussines.html">Listar Meu Negocio</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Fim do cabeçalho do site -->
+  
+  <!-- Inicio do corpo (Sobre) do site -->
+  <main>
+    <aside class="container">
+      <img class="logo-loja" src="../image/logo.png" alt="logo da loja" >
+      <h1 class="nome-loja">Procedimentos</h1>
+    </aside>
+    <nav class="sobre">
+      <h1>Sobre</h1>
+      <h5>Roni Rego has been in the beauty industry and working as a nail technician for 10+ years serving the Bay Area, CA. She is an Advanced Nail Technician and Certified "Safe Salon Professional"</h5>
+      <h1>Informações Adicionais</h1>
+      <h5>Nails by Roni is located at 3820 Park Blvd. in Oakland, CA
+        Please arrive no earlier than 5 minutes prior to your appointment as there is limited waiting space. Thank you!</h5>
+        <h1>Staff</h1>
+        <h5>Roni Rego has been in the beauty industry and working as a nail technician for 10+ years serving the Bay Area, CA. She is an Advanced Nail Technician and Certified "Safe Salon Professional"
+        </h5>
+  <!-- Fim do corpo (Sobre) do site -->
+        <!-- Inicio do corpo (Mostrar Serviços) do site -->
+        <button onclick="mostrarServicos()">Ver Serviços</button>
+    </nav>
+    <nav class="interface-servicos" style="display: none;">
+    <h1 class="titulo-interface">Nossos Serviços</h1><hr>
+    </nav>
+    <nav>
+      <ul class="servicos">
+          <!-- Serviço 1 -->
+          <li class="servico">
+              <span class="nome-servico">Serviço 1</span>
+              <span class="preco">$50</span>
+          </li>
+
+          <!-- Serviço 2 -->
+          <li class="servico">
+              <span class="nome-servico">Serviço 2</span>
+              <span class="preco">$70</span>
+          </li>
+
+          <!-- Serviço 3 -->
+          <li class="servico">
+              <span class="nome-servico">Serviço 3</span>
+              <span class="preco">$100</span>
+          </li>
+      </ul>
+  </nav>
+  <nav class="agendamento">
+    <button type="submit">Agende Agora</button>
+    <hr>
+    <h1>Endereço</h1>
+    <h5>Endereço: Rua Tal 3820, Bairro Acula</h5>
+    <a href="Localizacao-loja-maps">Mostrar Mapa</a>
+    <h1>Pagamentos Aceitos</h1>
+    <!--Colocar Fotos Referentes ao Tipos de Pagamentos Aceitos-->
+    <h1>Redes Socias</h1>
+    <!--Colocar Foto Referente ao Facebook--><h5>Facebook</h5>
+    <!--Colocar Foto Referente ao Instagram--><h5>Instagram</h5>
+        <!-- Fim do cabeçalho do site -->
+
+  </nav>
+
+    </nav>
+    <script>
+      function mostrarServicos() {
+  var interfacesLoja = document.getElementsByClassName("sobre");
+  var interfacesServicos = document.getElementsByClassName("interface-servicos");
+  for (var i = 0; i < interfacesLoja.length; i++) {
+      interfacesLoja[i].style.display = "none";
+  }
+  for (var i = 0; i < interfacesServicos.length; i++) {
+      interfacesServicos[i].style.display = "block";
+  }
+}
+    </script>
+  </main>
+</body>
+</html>
+  
